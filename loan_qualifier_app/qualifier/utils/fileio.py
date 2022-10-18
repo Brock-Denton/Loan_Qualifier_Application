@@ -30,6 +30,14 @@ def load_csv(csvpath):
     return data
 
 def save_csv(csvpath, data): 
+    """Saves data from a path and data provided. 
+    
+    Args:
+        csvpath (Path): The csv file path
+        
+        data: The data you want read
+    
+    """
              
     header = ["Lender", "Max Loan Amount", "Max LTV", "Max DTI", "Min Credit Score", "Interest Rate"]
     

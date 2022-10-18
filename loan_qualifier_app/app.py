@@ -111,14 +111,16 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     
+    #If there are no qualifying loans, it will notify the user and close
     if len(qualifying_loans) < 1: 
         sys.exit("Sorry, you don't qualify for any loans at this time")
-    
+    #asks the user if they would like to save the qualifying loans as .csv
     saving = questionary.confirm("Would you like to save the loans that you qualify for as a .csv?").ask()
-    
+    #if the user decides to opt-in, they choose what they would like to call it
     if saving: 
-        csvpath = 'qualifying_loans.csv'
+        csv path = questionary.text("What would you like to save the qualifying loans file as? (.csv):").ask()
         save_csv(Path(csvpath), qualifying_loans) 
+    #if the user decides to opt-out, the application says bye
     if not saving:
         sys.exit("okay, goodbye.")
         
