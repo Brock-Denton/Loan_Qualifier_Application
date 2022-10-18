@@ -1,0 +1,50 @@
+  369  ..
+  370  cd desktop/ready_columbia/Module_2_Challenge/Starter_Code/Starter_Code/loan_qualifier_app
+  371  ls
+  372  cd desktop
+  373  cd
+  374  cd desktop
+  375  cd ready_columbia/
+  376  cd Module_2
+  377  cd 
+  378  cd desktop
+  379  cd ready_columbia/
+  380  cd Module_2_Challenge/
+  381  cd Starter_Code
+  382  cd Starter_Code/
+  383  cd loan_qualifier_app/
+  384  ls
+  385  wintpty python app.py
+  386  winpty python app.py
+  387  winpty python app.py
+  388  winpty python app.py
+  389  winpty python app.py
+  390  ls
+  391  winpty app.py
+  392  winpty python app.py
+  393  winpty python app.py
+  394  winpty python app.py
+  395  winpty python app.py
+  396  winpty python app.py
+  397  winpty python app.py
+  398  winpty python app.py
+  399  winpty python app.py
+  400  winpty python app.py
+  401  winpty python app.py 
+  402  winpty python app.py
+  403  winpty python app.py
+  404  winpty python app.py
+  405  winpty python app.py
+  406  winpty python app.py
+  407  winpty python app.py
+  408  winpty python app.py
+  409  winpty python app.py
+  410  winpty python app.py
+  411  winpty python app.py
+  412  winpty python app.py
+  413  winpty python app.py
+  414  winpty python app.py
+  415  winpty python app.py
+  416  winpty python app.py
+  417  winpty python app.py
+  418  history 50 > terminal_history.txt
