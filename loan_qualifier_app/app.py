@@ -118,18 +118,16 @@ def save_qualifying_loans(qualifying_loans):
         save_csv(Path(csvpath), qualifying_loans) 
     if not saving:
         sys.exit("okay, goodbye.")
-    
 
-def save_csv(csvpath, qualifying_loans): 
+def save_csv(csvpath, data): 
              
-    #csvpath = 'qualifying_loans.csv'
     header = ["Lender", "Max Loan Amount", "Max LTV", "Max DTI", "Min Credit Score", "Interest Rate"]
     
     with open(csvpath, 'w', newline = '') as csvfile:
             
         csvwriter = csv.writer(csvfile, delimiter=",")
         csvwriter.writerow(header)
-        csvwriter.writerows(qualifying_loans)
+        csvwriter.writerows(data)
         
         
 def run():
