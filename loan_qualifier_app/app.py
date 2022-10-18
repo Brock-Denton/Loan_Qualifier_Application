@@ -118,7 +118,7 @@ def save_qualifying_loans(qualifying_loans):
     saving = questionary.confirm("Would you like to save the loans that you qualify for as a .csv?").ask()
     #if the user decides to opt-in, they choose what they would like to call it
     if saving: 
-        csv path = questionary.text("What would you like to save the qualifying loans file as? (.csv):").ask()
+        csvpath = questionary.text("What would you like to save the qualifying loans file as? (.csv):").ask()
         save_csv(Path(csvpath), qualifying_loans) 
     #if the user decides to opt-out, the application says bye
     if not saving:
