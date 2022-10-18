@@ -1,33 +1,61 @@
-# Project Title
+# Loan_qualifier_app
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+Imagine a startup trying to sift through users information manually to determine if they qualify for a loan... no need with the loan qualifier app. Any determined qualifiers set by the lenders is easy to integrate and the app automatically sifts and sorts which qualifying loans they're accepted for! 
 
 ---
 
 ## Technologies
+Python 3.10 was used for this project. 
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+Fire - allows the applciation to interact with the cli
+
+Questionary - asks the users for input 
 
 ---
 
 ## Installation Guide
-
-In this section, you should include detailed installation notes containing code blocks and screenshots.
-
+```
+pip install fire
+```
+```
+pip install questionary
+```
 ---
 
 ## Usage
+After you clone the repo, navigate to it, and install the dependencies, please follow the below guide and reference the pictures: 
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+-Run the application.
+
+-Select the data .csv path you'd like to read from (the lenders qualifier data). 
+
+-The user inputs their information. 
+
+-The application automatically calculates the users information and compares them to the lenders qualifer data to see if they qualify for any loans. 
+
+-If no, they're notified and the application closes. 
+
+-If yes, they have the option to save the file. If they choose no, it closes. If they chose yes, they're asked what they'd like to name the file. 
+
+-The qualifying data is written to that specficed file within the directory. 
+
+
+*You'll see that in the first one, I had no qualifying loans so it notified me and exited.* 
+![no_qualifying](https://user-images.githubusercontent.com/23126459/196345065-2e7a0598-aa9d-4f14-8775-2d7e1e1ce330.PNG)
+
+
+*In the next one, I had 24 qualifiying loans and it saved to the directory as the specfied file name.*
+![24_qualifying](https://user-images.githubusercontent.com/23126459/196345192-48ef1ab3-a597-400c-8dc5-422f37349093.PNG)
+
 
 ---
 
 ## Contributors
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
+brockchecksmail@gmail.com
 
 ---
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify what others can and can't with your source code and files. Use this section to include the license you want to use.
+MIT
